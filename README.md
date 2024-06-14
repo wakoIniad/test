@@ -1,2 +1,2 @@
-# team-website-7
+# team-project
 INIAD CS演習 チーム実習
