@@ -5,11 +5,12 @@ body {
 
 #main {
     width: 100%;
+    height: 100vh;
 }
 
 .large-content {
     display: inline-block;
-    height: 100vh;
+    height: 100%;
 }
 
 .left-image {
@@ -20,4 +21,21 @@ body {
 .right-description {
     width: 60%;
     background-color: rgb(255,0,255);
+}
+
+#image-div {
+    width:95%;
+    height:100%;
+    margin: auto;
+    background: rgb(255,0,0);
+
+    overflow:hidden;
+}
+
+#description-div {
+    font-family: san-serif;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    overflow:hidden;
 }
