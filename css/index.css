@@ -20,7 +20,7 @@ body {
 }
 
 nav{
-	background:#333;
+	background:#02152b;
 	color:#fff;
 	text-align: center;
 }
@@ -28,7 +28,7 @@ nav{
 nav ul{
 	list-style: none;
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 }
 
 nav ul ul{
