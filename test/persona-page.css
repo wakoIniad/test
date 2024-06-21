@@ -1,6 +1,6 @@
 body {
-    padding: 0 px;
-    margin: 0 px;
+    padding: 0px;
+    margin: 0px;
 }
 
 #main {
@@ -13,13 +13,11 @@ body {
 }
 
 .left-image {
-    width:39%;
+    width:40%;
     background-color: rgb(200,200,200);
-    border: solid black 1px;
 }
 
 .right-description {
-    width: 59%;
-    background-color: rgb(255,255,255);
-    border: solid black 1px;
+    width: 60%;
+    background-color: rgb(255,0,255);
 }
