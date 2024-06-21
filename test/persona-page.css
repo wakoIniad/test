@@ -1,0 +1,25 @@
+body {
+    padding: 0 px;
+    margin: 0 px;
+}
+
+#main {
+    width: 100%;
+}
+
+.large-content {
+    display: inline-block;
+    height: 100vh;
+}
+
+.left-image {
+    width:39%;
+    background-color: rgb(200,200,200);
+    border: solid black 1px;
+}
+
+.right-description {
+    width: 59%;
+    background-color: rgb(255,255,255);
+    border: solid black 1px;
+}
