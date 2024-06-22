@@ -1,0 +1,1 @@
+//$(".game-preview").outerHeight($(".game-preview").width*1.5);

@@ -186,11 +186,14 @@ section:nth-child(2n){
 }
 
 .preview {
-	width: calc(100%/1);
-	height:auto;
+	width: calc(100%);
 	box-sizing: border-box;
 	padding: 1em;
     display: inline-block;
+}
+
+.preview.game-preview {
+	height:calc(100vw*1.5);
 }
 
 .eye-catch {
@@ -202,24 +205,24 @@ section:nth-child(2n){
 	overflow-wrap: break-word;
 }
 
-.preview.game-preview {
-	
+.gameboy-container {
+	width: 100%;
 	/*background-color:rgba(255,150,0);*/
 	position: relative;
 }
 
-.preview.game-preview img {
+.gameboy-container img {
 	position: absolute;
 	width:100%;
 	pointer-events: none;
 }
 
-.preview.game-preview preview-content {
+.gameboy-container preview-content {
     top:0;
     left:0;
 }
 
-.preview.game-preview preview-content .explan {
+.gameboy-container preview-content .explan {
 }
 
 .preview.member-introduction {
@@ -247,6 +250,9 @@ section:nth-child(2n){
         -webkit-column-count: 2;
         column-count: 2;
 	}
+	.preview.game-preview {
+		height:calc(100vw/2*1.5);
+	}
 }
 
 
@@ -255,6 +261,9 @@ section:nth-child(2n){
         -moz-column-count: 3;
         -webkit-column-count: 3;
         column-count: 3;
+	}
+	.preview.game-preview {
+		height:calc(100vw/3*1.5);
 	}
 }
 
