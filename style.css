@@ -218,34 +218,42 @@ section:nth-child(2n){
 .gameboy-container .gb-frame-content {
     width: 100%;
     height: 100%;
-	box-sizing: border-box;
 }
 
-.gb-frame-top {
+.gb-frame-content .gb-frame-top {
     padding-top: 10%;
     padding-left: 5%;
+	box-sizing: border-box;
+	overflow: hidden;
+
+	width: 100%;
+    height: 50%;
 }
 
-.gb-frame-content .eye-catch {
+.gb-frame-content .gb-frame-top .eye-catch {
 	width: 90%;
 	z-index: -1;
 }
 
-.gb-frame-content .gb-frame-top {
-    width: 100%;
-    height: 40%;
-}
-
 .gb-frame-content .gb-frame-bottom {
+	box-sizing: border-box;
     width: 100%;
     height: 50%;
     padding: 10%;
+	position: relative;
 }
 
 .gb-frame-bottom .explan {
-    overflow: scroll;
-    height: 100%;
+    height: 80%;
     width:80%;
+	position: absolute;
+    overflow: scroll;
+	overflow-x: hidden;
+
+	background-color: rgba(255,255,200,0.75);
+	border-radius: 10%;
+	padding: 1em;
+	box-sizing: border-box;
 }
 
 .tile.member-introduction {
