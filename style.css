@@ -194,14 +194,31 @@ section:nth-child(2n){
 
 .eye-catch {
 	width: 100%;
+	z-index: -1;
 }
 
 .explan {
 	overflow-wrap: break-word;
 }
 
+.preview.game-preview {
+	
+	/*background-color:rgba(255,150,0);*/
+	position: relative;
+}
 
-.member-introduction {
+.preview.game-preview img {
+	position: absolute;
+	width:100%;
+	pointer-events: none;
+}
+
+.preview.game-preview preview-content {
+    top:0;
+    left:0;
+}
+
+.preview.member-introduction {
 	background-color: rgba(2, 21, 43);
 	color: rgb(200,255,255);
 }
@@ -238,5 +255,5 @@ section:nth-child(2n){
 }
 
 #opener {
-	
+
 }
