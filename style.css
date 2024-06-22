@@ -426,5 +426,6 @@ img.gameboy-img:after {
 }
 
 .menu-opt:hover {
-	color: rgba(33, 255, 251, 0.6)
+	color: rgba(200, 255, 251, 1);
+	text-shadow: 0 0 10px rgba(200, 255, 251, 1);
 }
