@@ -260,6 +260,7 @@ section:nth-child(2n){
 	background-color: #333;
 	/*background-color: rgba(2, 21, 43);*/
 	color: rgb(255,200,0);
+	border-radius: 10%;
 }
 
 .page-description {
@@ -298,6 +299,24 @@ section:nth-child(2n){
 	}*/
 }
 
-#opener {
+.original-scroller {
+    margin: 0 auto;
+    overflow-y: scroll;
+    border: solid 4px rgb(222, 148, 149);
+	/*rgba(222, 148, 191, 1);*/
+    border-radius: 5px;
+    scrollbar-color: #FAF8D8 rgb(222, 148, 149);
+    scrollbar-width: thin;
+}
 
+/*.tile.member-introduction,*/.dotgothic16-regular {
+	font-family: "DotGothic16", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.explan {
+	font-family: "DotGothic16", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
