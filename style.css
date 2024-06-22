@@ -473,6 +473,7 @@ img.gameboy-img:after {
 
 .prologue {
 	background-color: #333;
+	background-image:url(wood-texture2.jpg);
 }
 
 .prologue #top {
