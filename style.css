@@ -491,3 +491,7 @@ img.gameboy-img:after {
 	color: rgba(200, 255, 251, 1);
 	text-shadow: 0 0 10px rgba(200, 255, 251, 1);
 }
+
+.anchor {
+	visibility: none;
+}
