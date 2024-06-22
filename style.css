@@ -228,8 +228,24 @@ section:nth-child(2n){
 	width:100%;
 	pointer-events: none;
 
-	opacity: 0;
+	/*opacity: 0;*/
 	transition: 1s;
+}
+
+.attention {
+	position: absolute;
+	width:100%;
+	height: 50%;
+
+
+	transition: 1s;
+	bottom: 0px;
+
+	filter: drop-shadow(0 0 1em rgba(255, 255,255, 1));
+}
+
+.gameboy-container:hover .attention {
+	display: none;
 }
 
 .gameboy-container:hover > img.gameboy-img {
@@ -293,6 +309,7 @@ img.gameboy-img:after {
 	position: relative;
 }
 .gb-frame-bottom .explan {
+	/*mark*/
 	visibility: hidden;
 }
 .gameboy-container:hover .gb-frame-bottom .explan {
