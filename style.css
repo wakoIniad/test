@@ -206,8 +206,10 @@ section:nth-child(2n){
 	color: rgb(200,255,255);
 }
 
-.member-introduction.explan {
-
+.page-description {
+	background-color: #333;
+	color: rgba(200,200,200);
+	padding: 1em;
 }
 
 #main {
