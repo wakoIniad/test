@@ -271,8 +271,6 @@ section:nth-child(2n){
 	opacity: 0.5;
 	display: block;
 	/*background-color: rgba(190,255,0,0.5);*/
-
-	
 }
 
 
@@ -346,6 +344,8 @@ img.gameboy-img:after {
 	padding: 1em;
 	padding-bottom: 2em;
 	box-sizing: border-box;
+
+	z-index: 3;
 }
 
 .tile.member-introduction {
