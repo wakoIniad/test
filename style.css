@@ -299,7 +299,7 @@ img.gameboy-img:after {
 .tile.member-introduction {
 	
 	background-image: url(wood-texture2.jpg);
-	background-color: rgba(255,255,255,0.6);
+	background-color: rgba(33,200,255,0.6);
 	background-blend-mode:lighten;
 	
 	/*background-color: rgba(33,33,33);*/
