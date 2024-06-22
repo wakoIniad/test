@@ -350,9 +350,11 @@ img.gameboy-img:after {
 
 .tile.member-introduction {
 	
-	background-image: url(wood-texture2.jpg);
+	/*background-image: url(wood-texture2.jpg);
 	background-color: rgba(33,200,255,0.6);
-	background-blend-mode:lighten;
+	background-blend-mode:lighten;*/
+
+	background-color: rgb(258, 172, 34);
 	
 	/*background-color: rgba(33,33,33);*/
 	/*background-color: rgba(2, 21, 43);*/
@@ -472,6 +474,7 @@ img.gameboy-img:after {
 .prologue #top {
   /*text-shadow: rgba(200, 0, 133, 0.2) 5px 5px;*/
   color:rgba(255,255,255,0.9);
+  text-decoration: underline;
 }
 
 
