@@ -190,7 +190,7 @@ section:nth-child(2n){
 	box-sizing: border-box;
 	padding: 1em;
 	/*vertical-align:top;*/
-    display: inline-block;
+	
 }
 
 .eye-catch {
@@ -202,21 +202,55 @@ section:nth-child(2n){
 }
 
 #main {
-	column-count: 1;
+	display: flex;
+	flex-flow: row wrap;	
+
+}
+
+#main > div {
+	background: #666;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 36px;
+  }
+
+#main > :nth-child(1n + 1) { order: 1; }
+
+#main > :nth-child(-n + 1) {
+	page-break-before: always; /* CSS 2.1 syntax */
+	break-before: always;  /* New syntax */
 }
 
 
-
 @media (min-aspect-ratio: 1/1) {
-	#main {
-        column-count: 2;
+	.preview {
+		width: calc(100%/2);
+	}
+
+	#main > :nth-child(2n + 1) { order: 1; }
+	#main > :nth-child(2n + 2) { order: 2; }
+
+	#main > :nth-child(-n + 2) {
+		page-break-before: always; /* CSS 2.1 syntax */
+		break-before: always;  /* New syntax */
 	}
 }
 
 
 @media (min-aspect-ratio: 3/2) {
-	#main {
-        column-count: 3;
+	.preview {
+		width: calc(100%/3);
+	}
+
+	#main > :nth-child(3n + 1) { order: 1; }
+	#main > :nth-child(3n + 2) { order: 2; }
+	#main > :nth-child(3n + 3) { order: 3; }
+
+	#main > :nth-child(-n + 3) {
+		page-break-before: always; /* CSS 2.1 syntax */
+		break-before: always;  /* New syntax */
 	}
 }
 
