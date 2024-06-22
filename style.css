@@ -265,6 +265,8 @@ section:nth-child(2n){
 	margin: 10%;
 	height: 80%;
 	z-index: 1;
+	
+	pointer-events: none;
 }
 
 .gameboy-container:hover .eyecatch-overlay {
