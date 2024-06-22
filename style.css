@@ -197,7 +197,6 @@ section:nth-child(2n){
 	/*height:calc(100vw*1.5);*/
 	padding-bottom: 0em;
 	padding-top: 0em;
-	background-image: url(wood-texture3.jpg);
 }
 
 .explan {
@@ -293,8 +292,11 @@ img.gameboy-img:after {
 
 .tile.member-introduction {
 	
-	background-image: url(wood-texture.jpg);
+	background-image: url(wood-texture2.jpg);
+	background-color:rgba(255,255,255,0.8);
+	background-blend-mode:lighten;
 	/*background-color: rgba(2, 21, 43);*/
+	background-color: #333;
 	color: rgb(255,200,0);
 	border-radius: 10%;
 
@@ -310,6 +312,8 @@ img.gameboy-img:after {
 	-moz-column-count: 1;
 	-webkit-column-count: 1;
 	column-count: 1;
+
+	background-image: url(wood-texture3.jpg);
 }
 
 
