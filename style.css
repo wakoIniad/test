@@ -189,7 +189,6 @@ section:nth-child(2n){
 	width: calc(100%/1);
 	box-sizing: border-box;
 	padding: 1em;
-	/*vertical-align:top;*/
     display: inline-block;
 }
 
@@ -199,6 +198,16 @@ section:nth-child(2n){
 
 .explan {
 	overflow-wrap: break-word;
+}
+
+
+.member-introduction {
+	background-color: rgba(2, 21, 43);
+	color: rgb(200,255,255);
+}
+
+.member-introduction.explan {
+
 }
 
 #main {
