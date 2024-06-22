@@ -234,22 +234,6 @@ section:nth-child(2n){
 	z-index: 2;
 }
 
-.attention {
-	position: absolute;
-	width:100%;
-	height: 50%;
-
-
-	transition: 1s;
-	bottom: 0px;
-
-	filter: drop-shadow(0 0 1em rgba(255, 255,255, 1));
-}
-
-.gameboy-container:hover .attention {
-	display: none;
-}
-
 .gameboy-container:hover img.gameboy-img {
 	box-shadow: 10px 15px 22px 25px rgba(200, 0, 133, 0.2),
     0 0 2px rgba(0, 200, 100, 0.15); 
