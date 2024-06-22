@@ -191,21 +191,32 @@ section:nth-child(2n){
 	box-sizing: border-box;
 	padding: 1em;
     display: inline-block;
+	margin-top: 2em;
 }
-
 .tile.game-preview {
 	/*height:calc(100vw*1.5);*/
+	padding-bottom: 0em;
+	padding-top: 0em;
+	background-image: url(wood-texture3.jpg);
 }
 
 .explan {
 	overflow-wrap: break-word;
 }
 
-.tile.game-preview > .gameboy-container {
+.tile.game-preview .gameboy-container {
 	width: 100%;
     height:100%;
 	/*background-color:rgba(255,150,0);*/
 	position: relative;
+	background-color: rgba(150,150,150,0.35);
+	
+	/*background-color: rgba(33,3,3,0.35);*/
+}
+
+.tile.game-preview .overlay {
+	width:100%;
+	height:100%;
 }
 
 /*gameboyの画像*/
@@ -214,6 +225,29 @@ section:nth-child(2n){
 	width:100%;
 	pointer-events: none;
 }
+
+img.gameboy-img {
+	filter: drop-shadow(2em 2em 2em rgba(160, 160, 160, 0.8));
+	box-shadow: 10px 15px 22px -5px rgba(0, 0, 0, 0.2),
+    0 0 2px rgba(0, 0, 0, 0.15); 
+}
+img.gameboy-img:after {    
+	content: '';
+	position: absolute; /* 親要素に重なるように */
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	/* 👇白の透明度を調整したグラデーション */
+	background: linear-gradient(
+	  -90deg,
+	  rgba(255, 255, 255, 0) 0%,
+	  rgba(255, 255, 255, 0.1) 80%,
+	  rgba(255, 255, 255, 0.4) 94%,
+	  rgba(255, 255, 255, 0.5) 96%,
+	  rgba(255, 255, 255, 0) 100%
+	);
+  }
 
 .gameboy-container .gb-frame-content {
     width: 100%;
@@ -244,7 +278,7 @@ section:nth-child(2n){
 }
 
 .gb-frame-bottom .explan {
-    height: 80%;
+    height: 75%;
     width:80%;
 	position: absolute;
     overflow: scroll;
@@ -253,14 +287,18 @@ section:nth-child(2n){
 	background-color: rgba(255,255,200,0.75);
 	border-radius: 10%;
 	padding: 1em;
+	padding-bottom: 2em;
 	box-sizing: border-box;
 }
 
 .tile.member-introduction {
-	background-color: #333;
+	
+	background-image: url(wood-texture.jpg);
 	/*background-color: rgba(2, 21, 43);*/
 	color: rgb(255,200,0);
 	border-radius: 10%;
+
+	border: 1em #333 solid;
 }
 
 .page-description {

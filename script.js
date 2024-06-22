@@ -1,9 +1,13 @@
+const aspect = 1.50189907759;
 //$( window ).on("load", ()=>{
-    $(".game-preview").outerHeight($(".game-preview").width()*1.5);
+function _() {
+    $(".game-preview").outerHeight($(".game-preview").width()*aspect);
     console.log($(".game-preview").width())
+}
 
-    $( window ).on( "resize", ()=> {
-        $(".game-preview").outerHeight($(".game-preview").width()*1.5);
-        console.log($(".game-preview").width())
-    })
+$( window ).on( "resize", ()=> {
+    _();
+})
+
+_();
 //});
