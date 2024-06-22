@@ -352,6 +352,19 @@ img.gameboy-img:after {
 	border-top:  solid;
 }
 
+.tile.member-introduction:target {
+	animation: highlight 2.4s ease-in-out;
+}
+
+@keyframes highlight {
+	0% {
+	  background-color: #fceb70;
+	}
+	50% {
+	  background-color: rgb(255, 172, 38);
+	}
+}
+
 .page-description {
 	color: rgba(200,200,200);
 	padding: 1em;
@@ -481,6 +494,7 @@ img.gameboy-img:after {
 	color: rgba(200, 255, 251, 1);
 	text-shadow: 0 0 10px rgba(200, 255, 251, 1);
 }
+
 
 .anchor {
 	visibility: none;
