@@ -171,6 +171,7 @@ nav ul li.has-child.active::before{
 }
 
 
+
 small{
 	background:#333;
 	color:#fff;
@@ -187,6 +188,7 @@ section{
 section:nth-child(2n){
 	background:#f3f3f3;
 }
+
 
 .tile {
 	width: calc(100%);
@@ -325,7 +327,41 @@ img.gameboy-img:after {
 	background-image: url(wood-texture3.jpg);
 	/*background-color: rgba(33,255,255,0.6);*/
 	background-color: rgba(33,33,255,0.6);
+
+	background-size: 600% 600%;
+	/*background: linear-gradient(270deg, rgba(17, 11, 35, 0.4), rgba(44, 26, 48, 0.4), rgba(228, 205, 233, 0.4));*/
+    
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    -o-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+
 	background-blend-mode:lighten;
+}
+
+#main {
+    
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:54% 0%}
+    50%{background-position:47% 100%}
+    100%{background-position:54% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:54% 0%}
+    50%{background-position:47% 100%}
+    100%{background-position:54% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:54% 0%}
+    50%{background-position:47% 100%}
+    100%{background-position:54% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:54% 0%}
+    50%{background-position:47% 100%}
+    100%{background-position:54% 0%}
 }
 
 
@@ -382,4 +418,13 @@ img.gameboy-img:after {
 .prologue #top {
   text-shadow: rgba(200, 0, 133, 0.2) 5px 5px;
   color:rgba(255,255,255,0.6);
+}
+
+
+.menu-opt {
+	color:white;
+}
+
+.menu-opt:hover {
+	color: rgba(33, 255, 251, 0.6)
 }
