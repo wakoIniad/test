@@ -230,6 +230,8 @@ section:nth-child(2n){
 
 	/*opacity: 0;*/
 	transition: 1s;
+
+	z-index: 2;
 }
 
 .attention {
@@ -248,15 +250,29 @@ section:nth-child(2n){
 	display: none;
 }
 
-.gameboy-container:hover > img.gameboy-img {
-	opacity: 1;
-}
-
 .gameboy-container:hover img.gameboy-img {
 	box-shadow: 10px 15px 22px 25px rgba(200, 0, 133, 0.2),
     0 0 2px rgba(0, 200, 100, 0.15); 
 	background-blend-mode:lighten;
 }
+
+.eyecatch-overlay {
+	display: none;
+	opacity: 0;
+	position: absolute;
+	background-color: rgba(0,0,0,0);
+	width: 80%;
+	margin: 10%;
+	height: 80%;
+	z-index: 1;
+}
+
+.gameboy-container:hover .eyecatch-overlay {
+	opacity: 1;
+	display: block;
+	background-color: rgba(190,255,0,0.5);
+}
+
 
 img.gameboy-img {
 	filter: drop-shadow(2em 2em 2em rgba(160, 160, 160, 0.8));
@@ -298,7 +314,7 @@ img.gameboy-img:after {
 
 .gb-frame-content .gb-frame-top .eye-catch {
 	width: 90%;
-	z-index: -1;
+	/*z-index: -2;*/
 }
 
 .gb-frame-content .gb-frame-bottom {
@@ -367,10 +383,8 @@ img.gameboy-img:after {
     animation: AnimationName 30s ease infinite;
 
 	background-blend-mode:lighten;
-}
 
-#main {
-    
+	/*z-index: -3;*/
 }
 
 @-webkit-keyframes AnimationName {
