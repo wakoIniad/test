@@ -185,14 +185,14 @@ section:nth-child(2n){
 	background:#f3f3f3;
 }
 
-.preview {
+.tile {
 	width: calc(100%);
 	box-sizing: border-box;
 	padding: 1em;
     display: inline-block;
 }
 
-.preview.game-preview {
+.tile.game-preview {
 	height:calc(100vw*1.5);
 }
 
@@ -212,20 +212,20 @@ section:nth-child(2n){
 }
 
 /*gameboyの画像*/
-.gameboy-container > img {
+.gameboy-container > img.gameboy-img {
 	position: absolute;
 	width:100%;
 	pointer-events: none;
 }
 
-.gameboy-container preview-content {
+.gameboy-container gb-frame-content {
     
 }
 
-.gameboy-container preview-content .explan {
+.gameboy-container gb-frame-content .explan {
 }
 
-.preview.member-introduction {
+.tile.member-introduction {
 	background-color: #333;
 	/*background-color: rgba(2, 21, 43);*/
 	color: rgb(255,200,0);
@@ -250,7 +250,7 @@ section:nth-child(2n){
         -webkit-column-count: 2;
         column-count: 2;
 	}
-	.preview.game-preview {
+	.tile.game-preview {
 		height:calc(100vw/2*1.5);
 	}
 }
@@ -262,7 +262,7 @@ section:nth-child(2n){
         -webkit-column-count: 3;
         column-count: 3;
 	}
-	.preview.game-preview {
+	.tile.game-preview {
 		height:calc(100vw/3*1.5);
 	}
 }
