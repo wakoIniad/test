@@ -227,6 +227,13 @@ section:nth-child(2n){
 	position: absolute;
 	width:100%;
 	pointer-events: none;
+
+	opacity: 0;
+	transition: 1s;
+}
+
+.gameboy-container:hover > img.gameboy-img {
+	opacity: 1;
 }
 
 .gameboy-container:hover img.gameboy-img {
@@ -285,15 +292,20 @@ img.gameboy-img:after {
     padding: 10%;
 	position: relative;
 }
-
 .gb-frame-bottom .explan {
+	visibility: hidden;
+}
+.gameboy-container:hover .gb-frame-bottom .explan {
+	visibility: visible;
     height: 75%;
     width:80%;
 	position: absolute;
     overflow: scroll;
 	overflow-x: hidden;
 
-	background-color: rgba(255,255,200,0.75);
+	/*background-color: rgba(255,255,200,0.75);*/
+	background-color: rgba(33,33,33,0.5);
+	color: rgba(200, 255, 251, 0.5);
 	border-radius: 10%;
 	padding: 1em;
 	padding-bottom: 2em;
@@ -309,9 +321,9 @@ img.gameboy-img:after {
 	/*background-color: rgba(33,33,33);*/
 	/*background-color: rgba(2, 21, 43);*/
 	color: rgb(255,200,0);
-	border-radius: 10%;
+	border-radius: 10% 0%;
 
-	border: 1em #333 solid;
+	border-top:  solid;
 }
 
 .page-description {
@@ -392,11 +404,14 @@ img.gameboy-img:after {
 .original-scroller {
     margin: 0 auto;
     overflow-y: scroll;
-    border: solid 4px rgb(222, 148, 149);
+    /*border: solid 4px rgb(222, 148, 149);*/
+	border: solid 4px rgb(1, 148, 149);
 	/*rgba(222, 148, 191, 1);*/
     border-radius: 5px;
-    scrollbar-color: #FAF8D8 rgb(222, 148, 149);
-    scrollbar-width: thin;
+    /*scrollbar-color: #FAF8D8 rgb(222, 148, 149);*/
+    /*scrollbar-color: #FAF8D8 rgb(222, 18, 149);*/
+    scrollbar-color: #FAF8D8 rgb(33, 33, 33);
+    scrollbar-width: none;
 }
 
 /*.tile.member-introduction h1,*/.dotgothic16-regular {
