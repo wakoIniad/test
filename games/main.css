@@ -4,11 +4,10 @@
   font-style: normal;
 }
 
-.haikei{
+.background{
   position:relative;
   width: 100%;
   height: 99%;
-  background-image: url(https://image.api.playstation.com/vulcan/img/cfn/11307LYz6S9drBQ5DxqTtXpJgrkBd8LHrVniA1iLxMC-nnMIoGeN3lBQpSk4dk2g_B5ASg_CHvdu1oyRnnbprGtq8lAJolcw.png);
   background-position: center;
   background-size: cover;
   clip-path: inset(0 0 0 10%);
@@ -17,7 +16,7 @@
   opacity: 0.9;
 }
 
-.haikei::before{
+.background::before{
   content: "";
   width: 101%;
   height: 100%;
