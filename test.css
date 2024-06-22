@@ -220,11 +220,12 @@ section:nth-child(2n){
 }
 
 .gb-frame-top {
-    padding: 10%;
+    padding-top: 10%;
+    padding-left: 5%;
 }
 
 .gb-frame-content .eye-catch {
-	width: 80%;
+	width: 90%;
 	z-index: -1;
 }
 
