@@ -321,6 +321,8 @@ img.gameboy-img:after {
 	column-count: 1;
 
 	background-image: url(wood-texture3.jpg);
+	background-color: rgba(33,200,255,0.6);
+	background-blend-mode:lighten;
 }
 
 
