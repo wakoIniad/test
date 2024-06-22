@@ -187,6 +187,7 @@ section:nth-child(2n){
 
 .preview {
 	width: calc(100%/1);
+	height:auto;
 	box-sizing: border-box;
 	padding: 1em;
     display: inline-block;
@@ -216,6 +217,9 @@ section:nth-child(2n){
 .preview.game-preview preview-content {
     top:0;
     left:0;
+}
+
+.preview.game-preview preview-content .explan {
 }
 
 .preview.member-introduction {
