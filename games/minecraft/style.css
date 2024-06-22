@@ -1,3 +1,6 @@
 .background {
     background-image: url(concept.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 63%;
 }
