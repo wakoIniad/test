@@ -205,11 +205,24 @@ section:nth-child(2n){
 	height: 100%;
 	display: grid;
 	grid-template-rows: auto;
-	grid-template-columns: repeat(auto-fit ,calc(100%/3));
+	grid-template-columns: repeat(auto-fit ,calc(100%/1));
 	grid-auto-flow: row dense;
 
 	grid-auto-rows: auto;
 	grid-auto-columns: repeat(auto-fit ,calc(100%/3));
-	
-	
+}
+
+
+
+@media (min-aspect-ratio: 1/1) {
+	#main {
+		grid-template-columns: repeat(auto-fit ,calc(100%/2));
+	}
+}
+
+
+@media (min-aspect-ratio: 3/2) {
+	#main {
+		grid-template-columns: repeat(auto-fit ,calc(100%/3));
+	}
 }
